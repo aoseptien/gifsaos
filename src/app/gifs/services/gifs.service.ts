@@ -45,7 +45,7 @@ export class GifsService {
       })
       .pipe(
         map(({ data }) => data),
-        map((items) => GifMapper.mapGiphyItemsToGifsArray(items))
+        map((items) => GifMapper.mapGiphyItemsToGifsArray(items)),
       );
     // .subscribe((resp) => {
     //   const gifs = GifMapper.mapGiphyItemsToGifsArray(resp.data);
